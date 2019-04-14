@@ -1,6 +1,50 @@
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+/* .catList,
+.catContainer {
+  border: solid 1px black;
+} */
+
+.catList {
+  margin-right: 50px;
+  margin-top: 80px;
+}
+
+.catList > ul {
+  background-color: black;
+  /* margin-top: 50px; */
+}
+
+.catContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.catList > ul > li {
+  list-style: none;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.catList > ul > li > a {
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.catList > ul > li > a:hover {
+  color: orangered;
+}
+
+.clicks {
+  margin: 10px 0;
 }
